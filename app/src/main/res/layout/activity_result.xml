@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/ic_bg"
+    tools:context=".activities.ResultActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="25sp"/>
+
+        <ImageView
+            android:id="@+id/iv_trophy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trophy"
+            android:contentDescription="image"/>
+
+        <TextView
+            android:id="@+id/tv_congratulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:text="Hey,Congratulation"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="25sp"
+            tools:text="dachi"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="25sp"
+                android:text="Level:"/>-->
+
+            <TextView
+                android:id="@+id/tv_difficulty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="25sp"
+                tools:text="easy"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:gravity="center"
+            android:textColor="@android:color/secondary_text_dark"
+            android:layout_marginTop="10sp"
+            tools:text="your score is 0 out 8"/>
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Finish"
+            android:textColor="@color/primaryColor"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25sp"/>
+
+        <Button
+            android:id="@+id/btn_see_scores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="See Scores"
+            android:textColor="@color/primaryColor"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25sp"/>
+
+    </LinearLayout>
+</ScrollView>

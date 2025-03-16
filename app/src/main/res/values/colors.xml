@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#6200EE</color>          <!-- Primary color (example: purple) -->
+    <color name="onPrimaryColor">#FFFFFF</color>        <!-- Text/icon color on primary background -->
+    <color name="secondaryColor">#03DAC6</color>        <!-- Secondary color (example: teal) -->
+    <color name="onSecondaryColor">#000000</color>      <!-- Text/icon color on secondary background -->
+
+    <!-- Additional colors (optional) -->
+    <color name="backgroundColor">#FFFFFF</color>       <!-- Background color -->
+    <color name="onBackgroundColor">#000000</color>     <!-- Text color on background -->
+
+    <color name="colorPrimary">#0c90f1</color>
+    <color name="colorPrimaryDark">#0591f8</color>
+    <color name="colorAccent">#0c90f1</color>
+
+    <!--TODO (STEP 2: All the color values are added here.)-->
+    <!--START-->
+    <color name="main_screen_content_background_color">#EFEFEF</color>
+    <color name="primary_text_color">#363A43</color>
+    <color name="secondary_text_color">#7A8089</color>
+    <color name="divider_background">#e0e0e0</color>
+    <color name="light_blue">#45ADCC</color> <!-- Light Blue Shade -->
+
+    <color name="snackBar_error_color">#F72400</color>
+</resources>
