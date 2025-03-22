@@ -19,12 +19,6 @@
             android:name=".activities.QuizDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.QuizAppDetailsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.DetailedResultActivity"
-            android:exported="false" />
-        <activity
             android:name=".activities.BaseActivity"
             android:exported="false" />
         <activity

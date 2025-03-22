@@ -45,6 +45,7 @@ class SuperHard_QuestionsActivity : BaseActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         enableEdgeToEdge()
         setContentView(R.layout.activity_super_hard_questions)
 
