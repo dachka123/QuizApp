@@ -1,5 +1,6 @@
 package eu.tutorials.quizapp.activities
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
@@ -25,6 +26,7 @@ class QuizDetailsActivity : BaseActivity() {
         val tvDetailsName: TextView = findViewById(R.id.tvDetailsName)
         val tvDetailsScore: TextView = findViewById(R.id.tvDetailsScore)
         val tvDynamic: TextView = findViewById(R.id.tvDynamic)
+        val tvBackFromDetail: TextView = findViewById(R.id.tvBackFromDetail)
 
         dbHandler = DatabaseHandler(this)
 
@@ -51,6 +53,11 @@ class QuizDetailsActivity : BaseActivity() {
         else{
             tvDynamic.text = "Perfect. You are the best into guessing country's flags"
             tvDynamic.setBackgroundColor(Color.GREEN)
+        }
+
+        tvBackFromDetail.setOnClickListener{
+            val intent = Intent(this@QuizDetailsActivity, HistoryActivity::class.java)
+            startActivity(intent)
         }
     }
 
