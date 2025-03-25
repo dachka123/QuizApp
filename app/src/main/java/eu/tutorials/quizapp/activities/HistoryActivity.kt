@@ -2,16 +2,11 @@ package eu.tutorials.quizapp.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
@@ -64,7 +59,13 @@ class HistoryActivity : BaseActivity() {
         recyclerView.adapter = adapter
         adapter.setOnclickListener(object : QuizResultsAdapter.OnItemClickListener{
             override fun onItemClick(position: Int) {
-                val intent = Intent(this@HistoryActivity,QuizDetailsActivity::class.java)
+                val selectedQuiz = quizList[position]
+
+                val intent = Intent(this@HistoryActivity, QuizDetailsActivity::class.java)
+                intent.putExtra(Constants.USER_NAME, selectedQuiz.name)
+                intent.putExtra(Constants.TOTAL_QUESTIONS, selectedQuiz.totalQuestions)
+                intent.putExtra(Constants.CORRECT_ANSWERS, selectedQuiz.correctAnswers)
+
                 startActivity(intent)
             }
 

@@ -6,9 +6,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import eu.tutorials.quizapp.utils.Constants
 import eu.tutorials.quizapp.R
 import eu.tutorials.quizapp.database.DatabaseHandler
+import eu.tutorials.quizapp.models.Question
 import eu.tutorials.quizapp.models.QuizAppModel
 
 class ResultActivity : BaseActivity() {
@@ -41,7 +44,6 @@ class ResultActivity : BaseActivity() {
 
         tvScore.text = "Your score is $mCorrectAnswers out of $mTotalQuestions"
 
-
         btnFinish.setOnClickListener {
             val databaseHandler = DatabaseHandler(this)
 
@@ -49,6 +51,8 @@ class ResultActivity : BaseActivity() {
                 id = 0,
                 name = mUserName ?: "Unknown",
                 difficulty = mDifficultyLevel ?: "Unknown",
+                totalQuestions = mTotalQuestions,  // Store total questions
+                correctAnswers = mCorrectAnswers,  // Store correct answers
                 result = mCorrectAnswers
             )
 
@@ -70,6 +74,8 @@ class ResultActivity : BaseActivity() {
                 id = 0,
                 name = mUserName ?: "Unknown",
                 difficulty = mDifficultyLevel ?: "Unknown",
+                totalQuestions = mTotalQuestions,  // Store total questions
+                correctAnswers = mCorrectAnswers,  // Store correct answers
                 result = mCorrectAnswers
             )
 

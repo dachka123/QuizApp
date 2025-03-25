@@ -14,7 +14,6 @@ object Constants {
     const val CORRECT_ANSWERS : String = "correct_answers"
     const val DIFFICULTY_LEVEL = "difficulty_level"
 
-
     fun getEasyQuestions():ArrayList<Question>{
         val questionsList = ArrayList<Question>()
 

@@ -36,8 +36,7 @@ class QuizResultsAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QuizResultsAdapter.ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_quiz_app, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_quiz_app, parent, false)
         return ViewHolder(view, mListener)
     }
 
